@@ -13,6 +13,7 @@ import HotAccessories from "./components/HotAccessories.js"
 import ProductReviews from "./components/ProductReviews.js"
 import Videos from "./components/Videos.js"
 import Banner from "./components/Banner.js"
+import Footer from "./components/Footer.js"
 
 
 
@@ -22,10 +23,10 @@ function App() {
         <PreNavbar />
         <Navbar />
         <Slider start={data.banner.start} />
-        <Offers offer={data.offer}/>
-        <Heading text="STAR PRODUCTS"/>
-        <StarProduct starProduct={data.starProduct}/> 
-        <Heading text="HOT ACCESSORIES"/>
+        <Offers offer={data.offer} />
+        <Heading text="STAR PRODUCTS" />
+        <StarProduct starProduct={data.starProduct} /> 
+        <Heading text="HOT ACCESSORIES" />
 
         <HotAccessoriesMenu />
 
@@ -46,12 +47,13 @@ function App() {
           </Route>
         </Routes>
 
-        <Heading text="PRODUCT REVIEWS"/>
-        <ProductReviews productReviews={data.productReviews}/>
-        <Heading text="VIDEOS"/>
+        <Heading text="PRODUCT REVIEWS" />
+        <ProductReviews productReviews={data.productReviews} />
+        <Heading text="VIDEOS" />
         <Videos videos={data.videos} />
-        <Heading  text="IN THE PRESS"/>
-        <Banner  banner={data.banner}/>
+        <Heading  text="IN THE PRESS" />
+        <Banner  banner={data.banner} />
+        <Footer footer={data.footer} />
 
       </Router>
   );
