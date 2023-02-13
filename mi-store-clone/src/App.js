@@ -6,6 +6,7 @@ import Slider from "./components/Slider.js"
 import data from "./data/data.json"
 import React from 'react';
 import Offers from "./components/Offers.js"
+import Heading from "./components/Heading.js"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
         <Slider start={data.banner.start} />
         <Offers offer={data.offer}/>
+        <Heading text="STAR PRODUCTS"/>
       </Router>
   );
 }
