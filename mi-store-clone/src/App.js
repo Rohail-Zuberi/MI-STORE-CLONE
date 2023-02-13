@@ -10,6 +10,8 @@ import Heading from "./components/Heading.js"
 import StarProduct from "./components/StarProduct.js"
 import HotAccessoriesMenu  from "./components/HotAccessoriesMenu.js"
 import HotAccessories from "./components/HotAccessories.js"
+import ProductReviews from "./components/ProductReviews.js"
+
 
 
 function App() {
@@ -42,8 +44,8 @@ function App() {
           </Route>
         </Routes>
 
-        
-
+        <Heading text="PRODUCT REVIEWS"/>
+        <ProductReviews productReviews={data.productReviews}/>
 
       </Router>
   );
