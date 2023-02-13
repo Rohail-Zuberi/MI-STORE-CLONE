@@ -3,8 +3,9 @@ import PreNavbar from './components/PreNavbar';
 import Navbar from './components/Navbar.js';
 import { BrowserRouter as Router } from "react-router-dom"
 import Slider from "./components/Slider.js"
-import {banner} from "./data/data.json"
+import data from "./data/data.json"
 import React from 'react';
+import Offers from "./components/Offers.js"
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
       <Router>
         <PreNavbar />
         <Navbar />
-        <Slider start={banner.start} />
+        <Slider start={data.banner.start} />
+        <Offers offer={data.offer}/>
       </Router>
   );
 }
