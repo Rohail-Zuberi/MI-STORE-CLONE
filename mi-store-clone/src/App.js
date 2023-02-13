@@ -8,6 +8,7 @@ import React from 'react';
 import Offers from "./components/Offers.js"
 import Heading from "./components/Heading.js"
 import StarProduct from "./components/StarProduct.js"
+import HotAccessoriesMenu  from "./components/HotAccessoriesMenu.js"
 
 
 function App() {
@@ -19,6 +20,10 @@ function App() {
         <Offers offer={data.offer}/>
         <Heading text="STAR PRODUCTS"/>
         <StarProduct starProduct={data.starProduct}/> 
+        <Heading text="HOT ACCESSORIES"/>
+
+        <HotAccessoriesMenu />
+
       </Router>
   );
 }
